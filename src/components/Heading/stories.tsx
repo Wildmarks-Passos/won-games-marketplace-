@@ -5,9 +5,9 @@ export default {
   title: 'Heading',
   component: Heading,
   argTypes: {
-    beforeColor: { control: 'color' },
+    lineColor: { control: 'color' },
     color: { control: 'inline-radio' },
-    beforePosition: { control: 'inline-radio' },
+    linePosition: { control: 'inline-radio' },
     children: {
       type: 'string'
     }
@@ -17,5 +17,5 @@ export default {
 export const Default: Story<HeadingProps> = (args) => <Heading {...args} />
 
 Default.args = {
-  children: 'Most Populars'
+  children: 'Won Games'
 }

@@ -3,22 +3,22 @@ import * as S from './styles'
 export type HeadingProps = {
   children: React.ReactNode
   color?: 'white' | 'black'
-  beforeColor?: string
-  isBefore?: boolean
-  beforePosition?: 'beforeLeft' | 'beforeBottom'
+  lineColor?: string
+  isLine?: boolean
+  linePosition?: 'lineLeft' | 'lineBottom'
 }
 
 const Heading = ({
   children,
   color = 'white',
-  isBefore = true,
-  beforeColor = '#35BDAC',
-  beforePosition = 'beforeLeft'
+  isLine = true,
+  lineColor = '#35BDAC',
+  linePosition = 'lineLeft'
 }: HeadingProps) => (
   <S.Wrapper
-    isBefore={isBefore}
-    beforeColor={beforeColor}
-    beforePosition={beforePosition}
+    isLine={isLine}
+    lineColor={lineColor}
+    linePosition={linePosition}
     color={color}
   >
     {children}
